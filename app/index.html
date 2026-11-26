@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DompetKeluarga — Anggaran Rumah Tangga</title>
+<meta name="description" content="DompetKeluarga: catat pemasukan dan pengeluaran, atur anggaran tiap kategori, dan kejar tujuan menabung keluarga — semua tersimpan di peramban Anda.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">Rp</span>
+      <span class="brand-text"><strong>DompetKeluarga</strong><small>Anggaran rumah tangga</small></span>
+    </a>
+    <nav class="mainnav" aria-label="Navigasi utama">
+      <a href="#/" data-route="">Dashboard</a>
+      <a href="#/transaksi" data-route="transaksi">Transaksi</a>
+      <a href="#/anggaran" data-route="anggaran">Anggaran</a>
+      <a href="#/tujuan" data-route="tujuan">Tujuan</a>
+      <a href="#/laporan" data-route="laporan">Laporan</a>
+    </nav>
+    <div class="month-picker">
+      <button id="prev-month" type="button" aria-label="Bulan sebelumnya">&lsaquo;</button>
+      <span id="month-label">November 2026</span>
+      <button id="next-month" type="button" aria-label="Bulan berikutnya">&rsaquo;</button>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="view" aria-live="polite"></main>
+<footer class="wrap footer">
+  <p><strong>DompetKeluarga</strong> — dibuat untuk keluarga yang ingin uangnya jelas larinya.
+  Data contoh keluarga Pradasta, November 2026. Semua perubahan tersimpan otomatis di peramban ini (localStorage), tanpa akun dan tanpa internet.</p>
+  <p class="foot-links"><a href="#/">Dashboard</a> · <a href="#/transaksi">Transaksi</a> · <a href="#/anggaran">Anggaran</a> · <a href="#/tujuan">Tujuan Menabung</a> · <a href="#/laporan">Laporan Bulanan</a></p>
+</footer>
+<script src="data.js"></script>
+<script src="store.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
